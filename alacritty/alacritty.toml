@@ -1,0 +1,19 @@
+general.import = [
+   "~/.config/alacritty/catppuccin-frappe.toml"
+]
+
+[window]
+    decorations = "Full"
+    blur = true
+    opacity = 0.8
+
+[font]
+
+   normal = {
+       family = "JetBrains Mono NF",
+       style  = "Regular"
+   }
+   size = 11.5
+   offset = { x = 0, y = 0 }
+   glyph_offset = { x = 0, y = 0 }
+   builtin_box_drawing = false

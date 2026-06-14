@@ -1,0 +1,94 @@
+@import "frappe.css";
+
+* {
+    border: none;
+    font-family: JetBrains Mono, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    border-radius: 0px;
+}
+
+#waybar {
+    margin: 5px;
+    color: @text;
+}
+
+window {
+}
+window#waybar {
+    padding-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background:@base ;
+}
+
+#workspaces {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*-----modules indv----*/
+#workspaces button {
+    border-radius: 100px;
+    padding: 2px 5px;
+    background-color: transparent;
+}
+
+#workspaces button.focused, #workspaces button.active {
+    font-weight: bold;
+    color: @blue;
+}
+
+#clock {
+    font-weight: bold;
+}
+
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#custom-power,
+#custom-menu,
+#idle_inhibitor {
+}
+#mode {
+    color: #cc3436;
+    font-weight: bold;
+}
+#custom-power {
+    color: @red;
+    border-radius: 100px;
+    margin-right: 5px;
+}
+/*-----Indicators----*/
+#idle_inhibitor.activated {
+    color: #2dcc36;
+}
+#pulseaudio.muted {
+    color: #cc3436;
+}
+#battery.charging {
+    color: #2dcc36;
+}
+#battery.warning:not(.charging) {
+	color: #e6e600;
+}
+#battery.critical:not(.charging) {
+    color: #cc3436;
+}
+#temperature.critical {
+    color: #cc3436;
+}
+/*-----Colors----*/
+/*
+ *rgba(0,85,102,1),#005566 --> Indigo(dye)
+ *rgba(0,43,51,1),#002B33 --> Dark Green 
+ *rgba(0,153,153,1),#009999 --> Persian Green 
+ *
+ */
